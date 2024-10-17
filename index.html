@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber SenseiQuiz</title>
+    <link rel="icon" type="image/png" href="src/icon.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="form-container">
+        <div class="header"> 
+            <img src="src/sv.png" alt="Logo">
+        </div>
+        <div id="nameInput">
+            <input type="text" id="name" placeholder="Seu nome" required>
+            <button id="startQuiz">Começar Quiz</button>
+            <div class="warning" id="nameWarning" style="display: none;">Por favor, insira seu nome antes de continuar.</div>
+        </div>
+        <div class="quiz-container" id="quizContainer" style="display: none;"></div>
+        <button id="nextQuestion" style="display: none;">Próxima Pergunta</button>
+        <div class="warning" id="warningMessage" style="display: none;">Por favor, selecione uma resposta antes de continuar.</div>
+        <div class="result" id="result" style="display: none;"></div>
+        <button id="showRanking" style="display: none;">Ver meu lugar no ranking</button>
+        <div class="ranking" id="ranking" style="display: none;">
+            <h2>Ranking</h2>
+            <ul class="ranking-list" id="rankingList"></ul>
+        </div>
+        <div class="warning" id="navigationWarning" style="display: none;">Após clicar em "Próxima Pergunta", você não poderá voltar às questões. Preste atenção!</div>
+    </div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
